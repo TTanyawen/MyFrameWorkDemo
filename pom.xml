@@ -15,7 +15,8 @@
     </parent>
 
     <modules>
-        <module>MyClient</module>
+        <module>my-client</module>
+        <module>my-framework</module>
     </modules>
 
 
