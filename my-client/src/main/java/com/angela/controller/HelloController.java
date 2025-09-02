@@ -10,9 +10,19 @@ public class HelloController {
     @Autowired
     private SayHelloSrv sayHelloSrv;
 
-    @RequestMapping("/sayhello")
-    public String sayHelloToName()
+    @RequestMapping("/sayhello/toname")
+    public String sayHelloToName(String name)
     {
-        return sayHelloSrv.sayHelloToName("Angela");
+        return sayHelloSrv.sayHelloToName(name);
+    }
+    @RequestMapping("/sayhello")
+    public String sayHello()
+    {
+        return sayHelloSrv.sayHello();
+    }
+    @RequestMapping("/autohello")
+    public String autoHello()
+    {
+        return sayHelloSrv.autoHello();
     }
 }
